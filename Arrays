@@ -1,0 +1,224 @@
+getAverrage
+//get the average from an interger array
+
+public double getAverage(int[] nums) {
+int sum = 0;
+for (int num : nums) {
+sum+= num;
+}
+return(double) sum / nums.length;
+}
+
+
+getSumFromArray
+//get the summation of all the numbers in the array
+
+public int getSumFromArray(int[] nums) {
+int sum = 0;
+for(int num : nums){
+sum+= num;
+}
+return sum;
+}
+
+getNumOfEvens
+//write a method that returns the number of evem numbers in a array
+
+public int getNumOfEvems (int [] nums) {
+int count = 0;
+for (int num: nums) {
+if ( num % 2 == 0) {
+count ++;
+}
+}
+return count ;
+}
+
+getNumOfChars
+//write a method that determines the total number of chars in each string of an array
+
+public int getNumofchars(String [] strs) {
+int totalChars = 0;
+for (String str : strs) {
+totalChars += str.length();
+}
+return totalChars;
+}
+
+getCharArray
+//given a string make an array made entirely out of each character of that string. eg "lol" -> {'i','o',i'}
+
+public char [] getCharArray (String str) {
+char [] charArray = new char[str.length()];
+for (int i = 0, i < str.length(); i++) {
+charArray[i] = str.chrAt(i);
+}
+return charArray;
+}
+
+
+getNumArray
+//given a number n, create an array with elements starting from 1 to n. eg 5-> { 1,2,3,4,5}
+
+public int[] getNumArray(int n) {
+int [] arr= new int[n];
+for(int i = 0; i < n; i++) {
+arr[i] = i + 1;
+}
+return arr;
+}
+
+getOddNumArray
+//given a number n, create an array with odd number starting from 1 to n {1,3,5}
+
+public int[] getOddNumArray(int n) {
+int [] odd = new int[(n+1) / 2];
+for (int i =0; oddNum = 1; i < odd.length; i++, odNum +=2) {
+odd[i] = oddNum;
+}
+return result
+}
+
+
+getMaxFromArray
+// get maximum int vaule in a given int array
+
+public int getMaxFromArray(int [] nums) {
+int max = nums[0];
+for (int i = 1; i < nums.length; i ++) {
+if (nums[i] > max) {
+max = nums[i];
+}
+}
+return max;
+}
+
+
+getMinFromArray
+// get minimum int value in a given int array
+
+public int getMinFromArray(int [] nums) {
+int min = nums[0];
+for ( int =1; i < num.length; i ++){
+if (nums[i] < min) {
+}
+}
+return min;
+}
+
+getStringFromArray
+// return the longest string in the array(Assume that no empty string is passed in)
+
+public String getStringFromArray(String [] strs) {
+String longest = strs[0];
+for( int i =1; i < strs.length; i++) {
+if (strs[i].length() > longest.length()) {
+longest = strs[i] ;
+}
+}
+return longest;
+}
+
+
+IsUniformArray
+//write a method that determines if all the elemnets in an array are the same
+
+public boolean isUniformArray(int []nums) {
+for (int i = 1; i < nums.length; i ++) {
+if (nums[i] != nums[0]) {
+return false;
+]
+}
+return true;
+}
+
+isUniformStringArray
+//write a method that determines if all the strings in an array are the same strings
+
+public boolean isUniformStringArray(String []strs) {
+for (int i = 1 ; i < strs.length; i++) {
+if (!strs[i].equals(strs[0])) {
+return false;
+}
+}
+return true;
+}
+
+getReverseArray
+// write a method that reverses the String elements is an array
+
+public String[] getReverseArray(String [] strs) {
+String [] reverseArr= new String[strs.length];
+for(int i = 0; i < strs.length; i++) {
+reverseArr[i] = strs[strs.length-i-1] ;
+}
+return revserseArr;
+}
+
+
+getStringsFromSSS
+// you have a space seperated string. write a methid that returns a string array that contains all 
+Strings in that space separated string.
+
+public String [] getStringsFromSS(String str) {
+if(str.isEmpty()) {
+return new String[] {" "};
+}
+else {
+return str.split(" ");
+}
+}
+
+
+getFirstThreeElements
+//Return the first 3 elements of a string Array in a new String array. if the input array is 
+of size less than 3, then return itself
+
+public String[] getFirstThreeElements(String [] strs) {
+if (strs.length <=3) {
+return strs;
+}
+String [] result = new String [3];
+for (int i = 0; i <3; i++) {
+result[i] = strs[i];
+}
+return result;
+}
+
+getNegativeNumber
+//you have an array of intergers, create an arrayList and insert all negative interger to it and 
+return it
+
+public List getNegativeNumbers(int[]nums) {
+ArrayList<Integer> negativeNumbers = new ArrayList <> ();
+for (int i = 0; i < nums.length; i++){
+if(nums[i] < 0) {
+negativeNumbers.add(nums[i]);
+}
+}
+return negativeNumbers;
+}
+
+getNumInArrayList
+//given a int argurment, that each digit and insert it to an arraylist and return it
+
+public List<Integer> list = new ArrayList<>();
+while (num > 0) {
+list.add(num%10);
+num/= 10;
+}
+Collections.reverse(list);
+return list;
+}
+
+
+
+
+
+
+
+
+
+
+
+
